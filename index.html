@@ -1,0 +1,66 @@
+<!doctype html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>IMPORTACIONESTECNOLOGICASACTIVAS - Inicio, Galería y Formulario</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+<h1>IMPORTACIONESTECNOLOGICASACTIVAS</h1>
+<nav>
+<a href="#intro">Inicio</a>
+<a href="#gallery">Galería</a>
+<a href="#form">Formulario</a>
+<a href="#comments">Comentarios</a>
+</nav>
+</header>
+
+
+<main>
+<section id="intro" class="card">
+<h2>Introducción</h2>
+<p>Bienvenido a productos Importados. Aquí puedes ver productos de la mejor calidad, puedes informarnos o darnos tus comentarios referente a los productos (guardados en el backend).</p>
+</section>
+
+
+<section id="gallery" class="card">
+<h2>Galería</h2>
+<div id="gallery-grid" class="grid">
+<!-- Las imágenes se añaden en HTML o JS -->
+<img src="PICTURE/LOGO.PNG" alt="Imagen 1"/>
+<img src="PICTURE/1.PNG" alt="Imagen 2"/>
+<img src="PICTURE/2.PNG" alt="Imagen 3"/>
+</div>
+</section>
+
+
+<section id="form" class="card">
+<h2>Formulario interactivo</h2>
+<form id="comment-form">
+<label>Nombre
+<input type="text" name="nombre" id="nombre" required />
+</label>
+<label>Mensaje
+<textarea name="mensaje" id="mensaje" rows="4" required></textarea>
+</label>
+<button type="submit">Enviar comentario</button>
+<div id="form-status" role="status" aria-live="polite"></div>
+</form>
+</section>
+
+
+<section id="comments" class="card">
+<h2>Comentarios</h2>
+<ul id="comments-list"></ul>
+</section>
+</main>
+
+
+<footer>
+<small>Proyecto de ejemplo — Backend simple con Express</small>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

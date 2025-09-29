@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>IMPORTACIONES TECNOLOGICAS ACTIVAS - Introducción, Galería y Formulario</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+<h1>Mi Proyecto</h1>
+<nav>
+<a href="#intro">Introducción</a>
+<a href="#gallery">Galería</a>
+<a href="#form">Formulario</a>
+<a href="#comments">Comentarios</a>
+</nav>
+</header>
+
+
+<main>
+<section id="intro" class="card">
+<h2>Introducción</h2>
+<p>Bienvenido a Importaciones Tecnologicas Activas. Aquí puedes ver una galería de imágenes, dejar un comentario mediante el formulario interactivo y ver los comentarios enviados (guardados en el backend).</p>
+</section>
+
+
+<section id="gallery" class="card">
+<h2>Galería</h2>
+<div id="gallery-grid" class="grid">
+<!-- Las imágenes se añaden en HTML o JS -->
+<img src="images/logo.png" alt="Imagen 1"/>
+<img src="images/1.png" alt="Imagen 2"/>
+<img src="images/2.png" alt="Imagen 3"/>
+</div>
+</section>
+
+
+<section id="form" class="card">
+<h2>Formulario interactivo</h2>
+<form id="comment-form">
+<label>Nombre
+<input type="text" name="nombre" id="nombre" required />
+</label>
+<label>Mensaje
+<textarea name="mensaje" id="mensaje" rows="4" required></textarea>
+</label>
+<button type="submit">Enviar comentario</button>
+<div id="form-status" role="status" aria-live="polite"></div>
+</form>
+</html>
